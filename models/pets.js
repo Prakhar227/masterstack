@@ -5,14 +5,15 @@ const petsSchema= new mongoose.Schema({
     petName:String,
     petAge:Number,
     petBreed:String,
-    petOwnerName:String,
+    petOwnersName:String,
+    petOwnerEmail:String, 
     petHealth:Number,
-    petAdoptionDays:Number,
-    petAddrees:String,
+    petAddress:String,
     petImageURL:String,
     petAdoptionTime:Number,
-    petAdoptionMsg:String,
-    gender:Boolean
+    adoptionMsg:String,
+    gender:Boolean,
+    petID:String
 });
 
 module.exports= mongoose.model('Pets' , petsSchema);

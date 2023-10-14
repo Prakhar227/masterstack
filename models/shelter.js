@@ -2,11 +2,11 @@ const mongoose=require('mongoose');
 
 const shelterSchema= new mongoose.Schema({
     name:String,
-    petTypes:String,
     address:String,
-    totalCapacity:[Number],
-    curreStrength: Number,
-    donationRecived:Number
+    totalCapacity :[Number],
+    currentStrength: [Number],
+    donationReceived:Number,
+    shelterID : String
 })
 
 module.exports= mongoose.model('Shelter',shelterSchema);    
